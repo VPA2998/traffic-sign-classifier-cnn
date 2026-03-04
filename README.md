@@ -19,6 +19,7 @@ This project implements a **complete traffic sign classification pipeline** on t
 - **Explainability**: CLIP (Contrastive Language-Image Pre-training) for human-readable descriptions
 - **Deployment**: Interactive Gradio web app
 
+> 🏗️ See [System Architecture](docs/ARCHITECTURE.md) for detailed diagrams of the CNN, training pipeline, and CLIP integration.
 ---
 
 ## 🎯 Key Features
