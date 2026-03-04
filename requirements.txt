@@ -1,0 +1,16 @@
+# Core Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Hugging Face & Transformers
+transformers>=4.30.0
+datasets>=2.14.0
+
+# Visualization & UI
+gradio>=3.0.0
+matplotlib>=3.4.0
+pillow>=9.0.0
+
+# Utilities
+numpy>=1.21.0
+tqdm>=4.65.0

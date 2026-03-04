@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints
+
+# PyTorch
+*.pth
+*.pt
+*.onnx
+*.ckpt
+
+# Models (large binaries)
+models/*.pth
+models/*.pt
+!models/.gitkeep
+
+# Outputs (keep demo, ignore raw plots)
+outputs/*.png
+outputs/*.jpg
+outputs/*.pdf
+!outputs/demo/.gitkeep
+
+# Data (optional, keep small samples)
+data/*.parquet
+data/*.arrow
+!data/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Hugging Face cache
+~/.cache/huggingface/
