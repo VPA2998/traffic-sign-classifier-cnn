@@ -80,19 +80,20 @@ sequenceDiagram
     participant Prep as Preprocessing
     participant Model as CNN Model
     participant Loss as CrossEntropy
-    participant Opt as Adam Optimizer
+    participant Optimizer as Adam Optimizer
     
     loop Each Epoch (15 total)
         Data->>Prep: Load batch (32 images)
         Prep->>Model: Normalized tensor (32x32x3)
         Model->>Loss: Forward pass → Logits
-        Loss->>Opt: Compute loss & gradients
-        Opt->>Model: Update weights
+        Loss->>Optimizer: Compute loss & gradients
+        Optimizer->>Model: Update weights
         Model->>Data: Next batch
     end
     
     Model->>Model: Save best.pth
 ```
+
 ### Training Hyperparameters
 
 | Parameter         | Value                       |
