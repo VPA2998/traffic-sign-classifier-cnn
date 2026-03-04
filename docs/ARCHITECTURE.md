@@ -74,7 +74,7 @@ graph LR
 
 ## 🔄 Training Pipeline
 
-```
+```mermaid
 sequenceDiagram
     participant Data as GTSRB Dataset
     participant Prep as Preprocessing
@@ -109,7 +109,7 @@ sequenceDiagram
 
 CLIP is used post-hoc for generating human-readable explanations:
 
-```text
+```mermaid
 graph LR
     Img[Input Image] --> CLIP[CLIP Model<br/>ViT-B/32]
     CLIP --> ImgEmb[Image Embedding<br/>512-dim]
@@ -130,7 +130,7 @@ graph LR
 
 ## 📦 Deployment Architecture (Gradio)
 
-```
+```mermaid
 graph TB
     User[User Uploads Image] --> Gradio[Gradio Interface]
     Gradio --> Prep[Preprocessing<br/>Resize, Normalize]
